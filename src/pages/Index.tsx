@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import Icon from "@/components/ui/icon";
 import { useState } from "react";
 import CostCalculator from "@/components/CostCalculator";
+import MobileMenu from "@/components/MobileMenu";
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -114,10 +115,13 @@ const Index = () => {
             <a href="#guarantees" className="text-foreground hover:text-primary transition-colors">Гарантии</a>
             <a href="#contact" className="text-foreground hover:text-primary transition-colors">Контакты</a>
           </nav>
-          <Button size="lg" className="hidden md:flex">
-            <Icon name="Phone" size={18} className="mr-2" />
-            +7 (495) 123-45-67
-          </Button>
+          <div className="flex items-center gap-2">
+            <Button size="lg" className="hidden md:flex">
+              <Icon name="Phone" size={18} className="mr-2" />
+              +7 (495) 123-45-67
+            </Button>
+            <MobileMenu />
+          </div>
         </div>
       </header>
 
