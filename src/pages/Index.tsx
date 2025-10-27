@@ -100,6 +100,33 @@ const Index = () => {
     }
   ];
 
+  const testimonials = [
+    {
+      name: "Алексей Петров",
+      role: "Директор складского комплекса",
+      rating: 5,
+      text: "Обратился в ЭлектроПро для полного электроснабжения склада 2500 м². Работа выполнена в срок, качество на высшем уровне. Особенно порадовало внимание к деталям и безопасности."
+    },
+    {
+      name: "Марина Сидорова",
+      role: "Владелица загородного дома",
+      rating: 5,
+      text: "Заказывали установку системы Умный дом. Ребята сделали всё идеально! Теперь управляю освещением и климатом с телефона. Очень довольны результатом!"
+    },
+    {
+      name: "Дмитрий Козлов",
+      role: "Управляющий ТЦ",
+      rating: 5,
+      text: "Сотрудничаем с ЭлектроПро уже 3 года. Обслуживают электросистемы торгового центра, всегда оперативно реагируют на заявки. Надёжные партнёры!"
+    },
+    {
+      name: "Елена Волкова",
+      role: "Владелица квартиры",
+      rating: 5,
+      text: "Заменяли проводку в однокомнатной квартире. Работали аккуратно, убрали за собой. Цена оказалась такой же, как в смете, без доплат. Рекомендую!"
+    }
+  ];
+
   return (
     <div className="min-h-screen">
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border z-50">
@@ -252,6 +279,40 @@ const Index = () => {
                   <CardTitle className="font-heading">{project.title}</CardTitle>
                   <CardDescription className="text-base">{project.description}</CardDescription>
                 </CardHeader>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="font-heading text-4xl font-bold text-secondary mb-4">Отзывы клиентов</h2>
+            <p className="text-lg text-muted-foreground">Что говорят о нас наши клиенты</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+            {testimonials.map((testimonial, idx) => (
+              <Card key={idx} className="hover:shadow-lg transition-shadow animate-fade-in" style={{ animationDelay: `${idx * 100}ms` }}>
+                <CardHeader>
+                  <div className="flex items-start justify-between mb-3">
+                    <div>
+                      <CardTitle className="font-heading text-lg mb-1">{testimonial.name}</CardTitle>
+                      <CardDescription>{testimonial.role}</CardDescription>
+                    </div>
+                    <div className="flex gap-1">
+                      {Array.from({ length: testimonial.rating }).map((_, i) => (
+                        <Icon key={i} name="Star" size={16} className="text-accent fill-accent" />
+                      ))}
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <div className="relative">
+                    <Icon name="Quote" size={32} className="text-primary/20 absolute -top-2 -left-2" />
+                    <p className="text-muted-foreground italic pl-6">{testimonial.text}</p>
+                  </div>
+                </CardContent>
               </Card>
             ))}
           </div>
