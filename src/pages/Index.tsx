@@ -431,7 +431,7 @@ const Index = () => {
                     </div>
                     <div>
                       <div className="font-medium">Телефон</div>
-                      <a href="tel:+74951234567" className="text-primary hover:underline">+7 (495) 123-45-67</a>
+                      <a href="tel:89280441888" className="text-primary hover:underline">8 928 0 44 18 88</a>
                       <div className="text-sm text-muted-foreground mt-1">Ежедневно с 8:00 до 22:00</div>
                     </div>
                   </div>
@@ -441,7 +441,7 @@ const Index = () => {
                     </div>
                     <div>
                       <div className="font-medium">Email</div>
-                      <a href="mailto:info@electropro.ru" className="text-primary hover:underline">info@electropro.ru</a>
+                      <a href="mailto:opryshkov@bk.ru" className="text-primary hover:underline">opryshkov@bk.ru</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -533,8 +533,8 @@ const Index = () => {
             <div>
               <h4 className="font-heading font-semibold mb-4">Контакты</h4>
               <ul className="space-y-2 text-sm text-white/70">
-                <li>+7 (495) 123-45-67</li>
-                <li>info@electropro.ru</li>
+                <li>8 928 0 44 18 88</li>
+                <li>opryshkov@bk.ru</li>
                 <li>г. Москва</li>
               </ul>
             </div>
