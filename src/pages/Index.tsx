@@ -478,6 +478,46 @@ const Index = () => {
 
       <footer className="bg-secondary text-white py-12">
         <div className="container mx-auto px-4">
+          <div className="mb-12 max-w-2xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+              <h4 className="font-heading font-semibold text-xl mb-4 text-center">Быстрая связь</h4>
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <Input 
+                      placeholder="Ваше имя" 
+                      value={formData.name}
+                      onChange={(e) => setFormData({...formData, name: e.target.value})}
+                      className="bg-white/20 border-white/30 text-white placeholder:text-white/60"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <Input 
+                      type="tel" 
+                      placeholder="+7 (999) 123-45-67"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                      className="bg-white/20 border-white/30 text-white placeholder:text-white/60"
+                      required
+                    />
+                  </div>
+                </div>
+                <Textarea 
+                  placeholder="Ваш вопрос..."
+                  rows={3}
+                  value={formData.message}
+                  onChange={(e) => setFormData({...formData, message: e.target.value})}
+                  className="bg-white/20 border-white/30 text-white placeholder:text-white/60"
+                />
+                <Button type="submit" className="w-full bg-primary hover:bg-primary/90">
+                  <Icon name="Send" size={18} className="mr-2" />
+                  Отправить сообщение
+                </Button>
+              </form>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
