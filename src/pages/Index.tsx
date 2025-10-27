@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Icon from "@/components/ui/icon";
 import { useState } from "react";
+import CostCalculator from "@/components/CostCalculator";
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -195,7 +196,16 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-heading text-4xl font-bold text-secondary mb-4">Прайс-лист</h2>
-            <p className="text-lg text-muted-foreground">Прозрачное ценообразование без скрытых платежей</p>
+            <p className="text-lg text-muted-foreground">Рассчитайте стоимость работ или посмотрите базовые цены</p>
+          </div>
+          
+          <div className="mb-16">
+            <CostCalculator />
+          </div>
+
+          <div className="text-center mb-8">
+            <h3 className="font-heading text-2xl font-semibold text-secondary mb-2">Базовые расценки</h3>
+            <p className="text-muted-foreground">Ознакомьтесь с нашими стандартными тарифами</p>
           </div>
           <Card className="max-w-3xl mx-auto shadow-lg">
             <CardContent className="p-0">
