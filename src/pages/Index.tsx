@@ -105,7 +105,7 @@ const Index = () => {
       name: "Алексей Петров",
       role: "Директор складского комплекса",
       rating: 5,
-      text: "Обратился в ЭлектроПро для полного электроснабжения склада 2500 м². Работа выполнена в срок, качество на высшем уровне. Особенно порадовало внимание к деталям и безопасности."
+      text: "Обратился в ЭлектроПро.krd для полного электроснабжения склада 2500 м². Работа выполнена в срок, качество на высшем уровне. Особенно порадовало внимание к деталям и безопасности."
     },
     {
       name: "Марина Сидорова",
@@ -117,7 +117,7 @@ const Index = () => {
       name: "Дмитрий Козлов",
       role: "Управляющий ТЦ",
       rating: 5,
-      text: "Сотрудничаем с ЭлектроПро уже 3 года. Обслуживают электросистемы торгового центра, всегда оперативно реагируют на заявки. Надёжные партнёры!"
+      text: "Сотрудничаем с ЭлектроПро.krd уже 3 года. Обслуживают электросистемы торгового центра, всегда оперативно реагируют на заявки. Надёжные партнёры!"
     },
     {
       name: "Елена Волкова",
@@ -133,7 +133,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Icon name="Zap" className="text-primary" size={32} />
-            <span className="font-heading font-bold text-2xl text-secondary">ЭлектроПро</span>
+            <span className="font-heading font-bold text-2xl text-secondary">ЭлектроПро.krd</span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <a href="#services" className="text-foreground hover:text-primary transition-colors">Услуги</a>
@@ -506,7 +506,7 @@ const Index = () => {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Icon name="Zap" className="text-primary" size={28} />
-                <span className="font-heading font-bold text-xl">ЭлектроПро</span>
+                <span className="font-heading font-bold text-xl">ЭлектроПро.krd</span>
               </div>
               <p className="text-white/70 text-sm">
                 Профессиональные электромонтажные работы с 2009 года
@@ -540,7 +540,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-white/20 pt-8 text-center text-sm text-white/60">
-            <p>© 2024 ЭлектроПро. Все права защищены.</p>
+            <p>© 2024 ЭлектроПро.krd. Все права защищены.</p>
           </div>
         </div>
       </footer>
