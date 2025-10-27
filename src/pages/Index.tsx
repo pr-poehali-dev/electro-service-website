@@ -455,22 +455,6 @@ const Index = () => {
                   </div>
                 </CardContent>
               </Card>
-
-              <Card className="shadow-lg bg-accent text-accent-foreground">
-                <CardHeader>
-                  <CardTitle className="font-heading text-xl flex items-center gap-2">
-                    <Icon name="Clock" size={24} />
-                    Аварийная служба 24/7
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="mb-4">При аварийных ситуациях звоните по телефону:</p>
-                  <a href="tel:+74951234568" className="text-2xl font-heading font-bold hover:underline">
-                    +7 (495) 123-45-68
-                  </a>
-                  <p className="text-sm mt-2 opacity-90">Выезд в течение 1 часа по Москве и МО</p>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>
